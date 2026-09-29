@@ -1,0 +1,16 @@
+.admin-form.admin-preview-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.admin-form.admin-preview-form input {
+  flex: 1;
+  min-width: 180px;
+}
+
+.admin-form.admin-preview-form button {
+  white-space: nowrap;
+}

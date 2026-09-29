@@ -1,0 +1,7 @@
+{
+  "name": "@movex/shared",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Constants and helpers shared by the MoveX API, web site and rider app.",
+  "main": "index.js"
+}

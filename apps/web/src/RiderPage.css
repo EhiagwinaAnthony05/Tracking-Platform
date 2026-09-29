@@ -1,0 +1,234 @@
+.rider-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(0, 191, 166, 0.2), transparent 35%),
+    radial-gradient(circle at 85% 10%, rgba(255, 166, 0, 0.2), transparent 32%),
+    #081018;
+}
+
+.rider-dashboard {
+  max-width: 1120px;
+  margin: 30px auto;
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  background: rgba(6, 12, 20, 0.76);
+  backdrop-filter: blur(6px);
+}
+
+.rider-dashboard__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.rider-dashboard h2 {
+  margin: 0 0 10px;
+  color: #eaf4ff;
+  font-size: 1.65rem;
+  letter-spacing: 0.01em;
+}
+
+.rider-status {
+  margin: 0;
+  color: #b7c3d8;
+}
+
+.rider-kpi {
+  min-width: 190px;
+  border: 1px solid rgba(104, 210, 180, 0.4);
+  border-radius: 12px;
+  background: rgba(11, 26, 23, 0.7);
+  padding: 10px 14px;
+}
+
+.rider-kpi__label {
+  display: block;
+  color: #7dcab3;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.rider-kpi__value {
+  color: #ecfffa;
+  font-size: 1rem;
+}
+
+.rider-toolbar {
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 14px;
+  align-items: end;
+}
+
+.rider-add-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #9eb1cc;
+  font-weight: 600;
+}
+
+.rider-admin-note {
+  margin: 0 0 12px;
+  color: #ffd28c;
+  font-size: 0.92rem;
+}
+
+.rider-add-form__controls {
+  display: flex;
+  gap: 10px;
+}
+
+.rider-add-form input {
+  flex: 1;
+  min-width: 180px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.04);
+  color: #f4f7ff;
+  padding: 10px 12px;
+}
+
+.rider-orders {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 12px;
+}
+
+.rider-order-card {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 14px;
+}
+
+.rider-order-card__top {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.rider-order-card__id {
+  margin: 0;
+  font-weight: 700;
+  color: #f8fbff;
+}
+
+.rider-order-card__status {
+  margin: 4px 0 0;
+  color: #9bb5d4;
+}
+
+.rider-order-card__error {
+  margin: 8px 0 0;
+  color: #ff9f9f;
+  font-size: 0.92rem;
+}
+
+.rider-order-card__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.rider-pill {
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  background: transparent;
+  color: #d4def0;
+  border-radius: 999px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.rider-pill.active {
+  border-color: rgba(56, 219, 174, 0.8);
+  color: #7ef2cf;
+}
+
+.rider-pill.danger {
+  border-color: rgba(255, 133, 133, 0.55);
+  color: #ffb7b7;
+}
+
+.rider-order-card__meta {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.rider-order-card__meta p {
+  color: #ccd7e7;
+  margin: 5px 0;
+}
+
+.rider-empty {
+  border: 1px dashed rgba(255, 255, 255, 0.25);
+  border-radius: 12px;
+  padding: 20px;
+  color: #afc1d8;
+  text-align: center;
+}
+
+.rider-toolbar {
+  margin-top: 18px;
+}
+
+.rider-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.rider-btn {
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.rider-btn.primary {
+  background: linear-gradient(135deg, #00c58a, #00a076);
+  border-color: rgba(46, 218, 171, 0.75);
+  color: #04271f;
+}
+
+.rider-btn.secondary {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.25);
+  color: #f1f5ff;
+}
+
+.rider-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.rider-footer-note {
+  margin-top: 18px;
+  color: #95aaca;
+  font-size: 0.94rem;
+}
+
+@media (max-width: 860px) {
+  .rider-dashboard__header {
+    flex-direction: column;
+  }
+
+  .rider-toolbar {
+    grid-template-columns: 1fr;
+  }
+
+  .rider-add-form__controls {
+    flex-direction: column;
+  }
+
+  .rider-order-card__actions {
+    flex-direction: row;
+  }
+}

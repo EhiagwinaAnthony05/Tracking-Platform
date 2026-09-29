@@ -1,0 +1,30 @@
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  width: 100%;
+  display: flex;
+  align-items: center;
+    justify-content: space-between;
+    padding: 18px max(24px, calc((100% - 1120px) / 2));
+    background: var(--color-black);
+    color: var(--color-white);
+}
+
+.wordmark {
+    color: var(--color-white);
+    font-family: var(--font-display);
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.wordmark span { color: var(--color-green-word); }
+.header .mx-button { width: auto; }
+
+@media (max-width: 480px) {
+    .header { padding: 14px 16px; }
+    .wordmark { font-size: 20px; }
+    .header .mx-button { padding: 8px 12px; font-size: 12px; }
+}

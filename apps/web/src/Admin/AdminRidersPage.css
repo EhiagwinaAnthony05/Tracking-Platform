@@ -1,0 +1,79 @@
+.admin-rider-layout {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 16px;
+}
+
+.admin-rider-list__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.admin-refresh-btn {
+  border: 1px solid var(--color-primary);
+  background: rgba(0, 255, 65, 0.16);
+  color: #fff;
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.admin-refresh-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.admin-rider-map-toolbar {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.admin-rider-map-toolbar label {
+  color: #fff;
+  font-weight: 600;
+}
+
+.admin-rider-map-toolbar select {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+
+.admin-rider-meta {
+  margin-top: 10px;
+}
+
+.admin-rider-meta p {
+  margin: 4px 0;
+  color: #ddf6e1;
+}
+
+.admin-delete-rider-btn {
+  margin-top: 8px;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  font-weight: 600;
+  background: #e74c3c;
+  color: #fff;
+}
+
+.admin-delete-rider-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media (max-width: 980px) {
+  .admin-rider-layout {
+    grid-template-columns: 1fr;
+  }
+}

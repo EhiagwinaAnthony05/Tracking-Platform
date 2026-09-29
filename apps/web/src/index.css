@@ -1,0 +1,63 @@
+:root {
+  --color-black: #000000;
+  --color-green: #009B4A;
+  --color-green-deep: #007C40;
+  --color-green-word: #4CA85E;
+  --color-lime: #A1CD51;
+  --color-white: #FFFFFF;
+  --color-offwhite: #F6F8F5;
+  --color-grey: #6E7570;
+  --color-primary: var(--color-green);
+  --color-background: var(--color-black);
+  --color-text: var(--color-white);
+  --color-text-secondary: var(--color-grey);
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Montserrat', 'Inter', system-ui, sans-serif;
+  --font-sans: var(--font-body);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: var(--color-black);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+button,
+a,
+input {
+  font: inherit;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid var(--color-lime);
+  outline-offset: 3px;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
